@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 03</title>
+  </head>
+  <body>
+    <h2>Calculadora de divisão</h2>
+
+    Entre com o primeiro número: <input id="n1" /> <br>
+    Entre com o segundo número: <input id="n2" />
+<br><br>
+    <button onclick="quociente()">Quociente</button>
+    <button onclick="resto()">Resto</button>
+    <button onclick="completo()">Completo</button>
+<br>
+    <div id="div_msg"></div>
+  </body>
+
+  <script>
+    var ax_n1 = 0;
+    var ax_n2 = 0;
+
+    function quociente() {
+      ax_n1 = Number(n1.value);
+      ax_n2 = Number(n2.value);
+      var ax_quociente = ax_n1 / ax_n2;
+      div_msg.innerHTML = "A divisão de " + ax_n1 + " por " + ax_n2 + " é: " + ax_quociente.toFixed(1);
+    }
+
+    function resto() {
+      ax_n1 = Number(n1.value);
+      ax_n2 = Number(n2.value);
+      var ax_resto = ax_n1 % ax_n2;
+      div_msg.innerHTML = "O resto da divisão de " + ax_n1 + " por " + ax_n2 + " é: " + ax_resto;
+    }
+
+    function completo() {
+      ax_n1 = Number(n1.value);
+      ax_n2 = Number(n2.value);
+      var ax_quociente = ax_n1 / ax_n2;
+      var ax_resto = ax_n1 % ax_n2;
+      div_msg.innerHTML = "A divisão de " + ax_n1 + " por " + ax_n2 + " é: " + ax_quociente.toFixed(1) + " e o resto dessa divisão é: " + ax_resto;
+    }
+  </script>
+</html>

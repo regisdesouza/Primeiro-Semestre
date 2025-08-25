@@ -1,0 +1,233 @@
+1. Variável Local
+
+
+1.  Calculadora Básica
+
+Crie um programa que:  
+
+a) Solicite 2 números ao usuário  
+
+b) tenha um botão para cada operação aritmética. Ao clicar em algum deles, exibir na página uma dessas frases:  
+
+   - A soma entre X e Y é Z  
+
+   - A diferença entre X e Y é Z  
+
+   - O produto entre X e Y é Z  
+
+   - A razão entre X e Y é Z         
+
+ 
+
+2. Aposentadoria: Quanto Falta?
+
+Crie um programa o qual:  
+
+a) Solicite a idade do usuário  
+
+b) Deve haver 2 botões abaixo: "Aposentadoria Homem" e "Aposentadoria Mulher"  
+
+c) No primeiro botão, calcule e exiba uma mensagem com o tempo que falta para se aposentar caso seja homem, considerando que um homem se aposenta com 70 anos  
+
+d) No segundo botão, calcule e exiba uma mensagem com o tempo que falta para se aposentar caso seja mulher, considerando que uma mulher se aposenta com 60 anos  
+
+
+3. Fazendo divisão
+
+Faça uma calculadora que sabe somente fazer a operação de divisão, assim:
+
+a) Receba dois números
+
+b) Tenha o botão "Quociente" que quando clicado emitirá a mensagem "A divisão de N1 por N2 é: XXX", sendo que N1 é o primeiro número recebido, N2 é o segundo e XXX é o quociente da divisão.
+
+b) Tenha o botão "Resto" que quando clicado emitirá a mensagem "O resto da divisão de N1 por N2 é: XXX", sendo que N1 é o primeiro número recebido, N2 é o segundo e XXX é o resto da divisão.
+
+c) Tenha o botão "Completo" que quando clicado emitirá a mensagem "A divisão de N1 por N2 é: XXX e o resto dessa divisão é: YYY", sendo que N1 é o primeiro número recebido, N2 é o segundo, XXX é o quociente da divisão e YYY é o resto dessa divisão.
+
+4. Dividindo a Pizza
+
+Todo mundo adora pizza! Existem para todos os gostos! Crie um programa que ajude um grupo de amigos a saber quanto uma pizza vai custar para cada amigo.  
+
+a) Solicite o valor da pizza e a quantidade de amigos que vão dividir o valor.  
+
+b) Ao clicar num botão "#lovePizza", exiba uma mensagem com a frase  
+
+     "Cada um dos X amigos vai pagar R$Y"  
+
+Onde X é a quantidade de amigos e Y é o resultado do cálculo que seu programa fará  
+
+
+5. Economia com o Bilhete Único
+
+Um estudante recebeu o Bilhete Único de estudante pela primeira vez e deseja saber quanto vai economizar por mês. O valor para estudante é metade do valor da passagem. Crie um programa que:  
+
+a) Pergunte a ele o valor da passagem  
+
+b) Pergunte a ele quantas viagens fará por mês  
+
+c) Ao clicar num botão "Ver economia", deve ver uma mensagem com uma frase como esta: "Você economizará R$X por mês"  
+
+ 
+
+6. Nota da Atividade Avaliativa
+Faça um programa para calcular o valor da nota da atividade avaliativa sendo:
+
+a) O nome do aluno
+
+b)  Pergunte o valor da Ativ. Avaliativa 1, Ativ. Avaliativa 2 e Ativ. Avaliativa 3
+
+c) Ao clicar no botão “Mostrar Nota” o programa deve emitir as seguintes mensagens:
+
+                A soma das suas três atividades é: 9999 
+
+                XXXX, a média das suas atividades é: 9999,9999 
+
+(OBS. XXXX é o nome do aluno)
+
+ 
+
+7. Cálculo da média da SPTech
+
+Na faculdade SPTech o aluno tem 2 notas: A da "avaliação continuada" e a da "avaliação semestral". A média final é a soma simples entre 40% da "continuada" e 60% da "semestral". Assim, para ajudar um aluno para saber o quanto precisa para passar de semestre e estagiar em empresas como C6Bank, Tivit, Banco Safra, Deloitte, HP etc, crie um programa que:  
+
+a) Solicite a nota que ele tirou na "continuada" e na "semestral"  
+
+b) Solicite o nome do aluno  
+
+c) Calcule sua média  
+
+d) Exiba uma frase como esta "A média de NOME será de MEDIA". Onde NOME é o valor informado em b) e MEDIA, o valor calculado em c) 
+  
+
+8. Fases do sono 
+
+Crie um programa que ajude a calcular o tempo de cada fase do sono do ser humano.  
+
+Sabendo que nosso sono possui fases como descreve a figura abaixo:  
+
+
+
+Vamos considerar que as fases do sono possuem a porcentagens de tempo descritas na figura.  
+
+
+a) Solicite ao usuário quantas horas de sono ele dormiu  
+
+b) Ao clicar no botão "Calcular Sono", faça os cálculos necessários para exibir o seguinte conteúdo na tela:  
+
+    Ao dormir X horas, você dormiu:  
+
+    A horas na fase 1  
+
+    B horas na fase 2  
+
+    C horas na fase 3  
+
+    D horas na fase REM  
+
+
+9. Eleição
+
+Crie um programa o qual:  
+
+a) Solicite a quantidade de votos que o "Candidato A" teve na eleição  
+
+b) Solicite a quantidade de votos que o "Candidato B" teve na eleição  
+
+c) Solicite a quantidade de votos brancos que houve na eleição  
+
+d) Solicite a quantidade de votos nulos que houve na eleição  
+
+e) Ao clicar em "Resultado da Eleição", exibir textos conforme o exemplo abaixo:  
+
+    Total de votos: 200  
+
+    Candidato A: 40% (80 votos)  
+
+    Candidato B: 35% (70 votos)  
+
+    Inválidos: 25% (50 votos)  
+
+A quantidade de votos "Inválidos" é a soma de brancos e nulos - valores colhidos nos itens c) e d) -  
+
+Não se preocupe em mostrar primeiro o "vencedor". Não temos como saber isso com o que aprendemos na programação até aqui ;)   
+
+Mostre os candidatos na ordem que quiser.  
+
+
+10. Dividindo a pizza e a caixinha do entregador
+
+Todo mundo gosta de pizza! É um prato super democrático, pois existem sabores veganos, vegetarianos, sem glúten, "low carb" (pouco carboidrato), doces etc.   
+
+Crie um programa o qual:  
+
+a) Solicite o sabor e o preço da pizza;  
+
+b) Solicite a quantidade de amigos que vão comer;  
+
+c) Ao clicar num botão "Ver valor por amigo", calcule e exiba na tela uma frase como esta:  
+
+    Cada amigo vai colaborar com R$X para a pizza de Y.  
+
+Obs: inclua no valor da pizza a caixinha do entregador que é sempre 10% do valor da pizza.  
+
+Obs²: Y é o sabor da pizza;  
+
+
+11. Cálculo do IMC
+
+Crie um programa o qual:  
+
+a) Solicite o peso e a altura do usuário;  
+
+b) Ao clicar num botão "Calcular IMC":  
+
+    b.1) Calcule e exiba seu IMC na tela, abaixo do botão;  
+
+Obs: Pesquise a fórmula simples de IMC na internet;  
+
+ 
+
+12. O Ki dos Sayajins! 
+
+Na franquia de desenhos animados “Dragon Ball”, existe a raça guerreira “Saiyajin”, que pode se transformar para obter diferentes níveis de poder. 
+
+Crie um programa que demonstre como o poder de guerreiros Sayajins aumenta na medida em que se transformam:  
+
+a) Solicite o "ki base" (força base) do guerreiro Sayajin;  
+
+b) Abaixo, deve haver o texto "Transformar em...";  
+
+c) Abaixo, deve haver os botões "SSJ", "SSJ2", "SSJ3", lado a lado entre si;  
+
+d) Ao clicar num dos botões, é calculado o novo ki do Sayajin conforme a regra de cada transformação:  
+
+    SSJ: ki base x 50  
+
+    SSJ2: ki base x 100  
+
+    SSJ3: ki base x 200  
+
+e) O valor do novo ki deve aparecer abaixo com uma frase como esta:  
+
+    Após se transformar em X, o ki desse Sayajin passa a ser de Y 
+
+    Onde X é o nome da transformação (SSJ, SSJ2 ou SSJ3) e Y é o valor calculado em d)  
+
+
+13. Cálculo do Vale Transporte 
+
+Crie um programa o qual:   
+
+a) Solicite o valor da passagem de ônibus;  
+
+b) Solicite a quantidade de viagens que o usuário faz por mês;  
+
+c) Solicite a distância do trabalho dele até sua casa (em km);  
+
+d) Ao clicar em "Calcular VT" calcule e exiba na tela quanto o usuário gastará por mês com transporte com uma frase como esta:  
+
+   Você vai gastar R$X por mês com transporte.  
+
+Obs: considere que uma viagem de Uber (99, cabify, etc) custa R$0,75 por km (ou seja, uma viagem de 10km custará R$7,50).  
+
+Obs: considere que o número de viagens de Uber (99, cabify, etc) que o usuário faz por mês é de 10% do número de viagens de ônibus (ou seja, se ele indicar que faz 50 viagens, considere 45 de ônibus e 5 de transporte de aplicativo).  
