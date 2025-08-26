@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 05</title>
+  </head>
+  <body>
+    <h2>Nota escolar opinião Mãe e Vó</h2>
+
+    Insira sua nota: <input id="ipt_nota" /> <br />
+    <br />
+
+    <button onclick="mae()">Opinião da mãe</button><br />
+    <br />
+    <div id="div_mae">Mãe aguardando nota...</div>
+    <br />
+    <br />
+    <button onclick="vo()">Opinião da vó</button><br />
+    <br />
+    <div id="div_msg">Avó aguardando nota...</div>
+  </body>
+
+  <script>
+    function vo() {
+      div_msg.innerHTML =
+        "Muito bem, que neto inteligente, porque tirou " + ipt_nota.value + "!";
+    }
+
+    function mae() {
+      div_mae.innerHTML =
+        "Não fez mais que tua obrigação com essa nota " + ipt_nota.value + "!";
+    }
+  </script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 04</title>
+  </head>
+  <body>
+    <h2>Onde Eu Moro</h2>
+
+    Insira o Nome da Rua/Avenida/Vila: <input id="ipt_rua" /> <br />
+    <br />
+    <div id="msg1"></div>
+    <br />
+    Insira o Número da Casa: <input id="ipt_numero" /> <br /><br />
+
+    <div id="msg2"></div>
+    <br />
+    <button onclick="endereco()">Onde eu moro</button>
+  </body>
+
+  <script>
+    function endereco() {
+      msg1.innerHTML = "Seu logradouro é " + ipt_rua.value + ".";
+      msg2.innerHTML = "O número do seu logradouro é " + ipt_numero.value + ".";
+    }
+  </script>
+</html>

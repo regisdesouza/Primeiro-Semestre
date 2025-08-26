@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 09</title>
+  </head>
+  <body>
+    <h2>Eleições</h2>
+
+    Digite a quantidade de votos do Candidato A:
+    <input id="ipt_votos01" /><br />
+    Digite a quantidade de votos do Candidato B:
+    <input id="ipt_votos02" /><br />
+    Digite a quantidade de votos Brancos: <input id="ipt_brancos" /><br />
+    Digite a quantidade de votos Nulos: <input id="ipt_nulos" /> <br />
+<br><br>
+    <button onclick="resultado()">Resultado da eleição</button> <br />
+
+    <div id="div_msg"></div>
+  </body>
+
+  <script>
+    function resultado() {
+      var ax_cadidato01 = Number(ipt_votos01.value);
+      var ax_cadidato02 = Number(ipt_votos02.value);
+      var ax_brancos = Number(ipt_brancos.value);
+      var ax_nulos = Number(ipt_nulos.value);
+      var ax_invalidos = ax_brancos + ax_nulos;
+      var ax_total = ax_invalidos + ax_cadidato01 + ax_cadidato02;
+      var perc_candidatoA = (ax_cadidato01 / ax_total) * 100;
+      var perc_candidatoB = (ax_cadidato02 / ax_total) * 100;
+      var perc_invalidos = (ax_invalidos / ax_total) * 100;
+
+
+      div_msg.innerHTML =
+        "<br>Total de votos: " + ax_total + "<br><br>" +
+        "Candidato A: " + perc_candidatoA.toFixed(2) + "% (" + ax_cadidato01 + " votos)<br>" +
+        "Candidato B: " + perc_candidatoB.toFixed(2) + "% (" + ax_cadidato02 + " votos)<br>" +
+        "Inválidos: " + perc_invalidos.toFixed(2) + "% (" + ax_invalidos + " votos)";
+    }
+  </script>
+</html>

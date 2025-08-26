@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 03</title>
+  </head>
+  <body>
+    <h2>Futebol</h2>
+
+    Insira o nome do seu time: <input id="ipt_time" /> <br /><br />
+    <br /><br />
+    Insira a quantidade de títulos que o time possui:
+    <input id="ipt_titulos" /> <br /><br />
+    <br />
+    <button onclick="time()">Amo meu time</button>
+    <br /><br />
+    <div id="msg1"></div>
+  </body>
+
+  <script>
+    function time() {
+      msg1.innerHTML =
+        "O " + ipt_time.value + " tem " + ipt_titulos.value + " títulos.";
+    }
+  </script>
+</html>
