@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de notas</title>
+</head>
+<body>
+    <h2>Controle de Notas</h2>
+    Entre com a primeira nota: <input id="n1"> <br><br>
+    Entre com a segunda nota: <input id="n2"><br><br>
+    Entre com a terceira nota: <input id="n3"><br><br>
+
+    <button onclick="analise()">Analisar Desempenho</button>
+    <div id="div_msg"></div>
+</body>
+<script>
+
+function analise() {
+    aux_total = Number(n1.value) + Number(n2.value) + Number(n3.value);
+    aux_media = aux_total / 3;
+    div_msg.innerHTML = `Sua média foi de ${aux_media}.`;
+
+    if (aux_media > 9.4) {
+    div_msg.innerHTML += `<br>Parabéns, você é fora de série!`;
+
+    }
+
+}
+
+</script>
+</html>

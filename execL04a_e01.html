@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa</title>
+</head>
+<body>
+    <h2>Partiu Festa?</h2>
+    Insira sua idade: <br> <input id="ipt_idade"><br>
+    <button onclick="festa()">Partiu Festa?</button>
+</body>
+<script>
+    function festa() {
+        if (ipt_idade.value < 18) {
+            alert ('Pedir permissão pro responsável');
+        }
+        alert ("#partiuFesta");
+    }
+</script>
+</html>

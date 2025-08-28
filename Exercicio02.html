@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <h2>Controle de Refrigerante</h2>
+
+    Quantas latinhas tomas por dia? <input id="ipt_latinhas">
+    <br><br>
+    <button onclick="tomar()">Quantos refris?</button>
+    <br><br>
+    <div id="div_msg"></div>
+</body>
+
+<script>
+ function tomar() {
+    var ax_latinhas = Number(ipt_latinhas.value);
+    var total = ax_latinhas * 365;
+    div_msg.innerHTML = 'Se toma ' + total + ' latinhas por ano';
+
+    if(total >= 500) {
+    div_msg.innerHTML += '<br>Cuidado com a diabetes!';
+
+    }
+
+ }
+
+
+
+</script>
+
+</html>
