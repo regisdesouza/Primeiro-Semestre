@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+</head>
+<body>
+    <h2>Financiando a Casa</h2>
+    Entre com o valor da sua renda familiar: <input id="ipt_familia"> <br><br>
+    Entre com o valor da prestação: <input id="ipt_prest"><br>
+
+    <button onclick="verificar()">Verificar financiamento</button>
+
+    <div id="div_msg"></div>
+</body>
+
+<script>
+
+
+function verificar() {
+    var ax_familiar = Number(ipt_familia.value);
+    var ax_prest = Number(ipt_prest.value);
+
+    var perc_total = (ax_prest / ax_familiar) * 100;
+
+    div_msg.innerHTML = `A prestação corresponde a ${perc_total.toFixed(2)}% da renda familiar`;
+
+    if (perc_total >= 30) {
+        
+    div_msg.innerHTML += `<span style="color: red;"><br><b>Será necessário complementar a renda familiar<b></span>
+`;
+
+    }
+}
+</script>
+</html>

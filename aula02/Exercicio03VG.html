@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+</head>
+<body>
+    <h2>Controle Financeiro Mensal</h2>
+    Entre com o valor da venda de peças:
+    <input id="ipt_val_pecas"> <br>
+    Entre com o valor de serviços:
+    <input id="ipt_val_servicos"> <br>
+    Entre com o percentual de imposto:
+    <input id="ipt_imposto"> <br>
+    Entre com o valor dos gastos do mês:
+    <input id="ipt_gastos"> <br>
+    <button onclick="acumular()">Acumuluar</button> <br><br>
+    <div id="div_msg"></div>
+
+
+</body>
+
+<script>
+
+var ax_mes = 0;
+var ax_acum = 0;
+
+function acumular() {
+    var ax_val_pecas = Number(ipt_val_pecas.value);
+    var ax_val_servicos = Number(ipt_val_servicos.value);
+    var ax_val_gastos = Number(ipt_gastos.value);
+    var ax_imposto = Number(ipt_imposto.value);
+    var ax_recebimento = 0;
+    var ax_val_imposto = 0;
+    var ax_liquido = 0;
+
+    ax_mes = ax_mes + 1;
+    ax_recebimento = ax_val_pecas + ax_val_servicos;
+    ax_val_imposto = ax_recebimento * (ax_imposto / 100);
+    ax_liquido = ax_recebimento - ax_val_imposto - ax_val_gastos;
+
+    ax_acum = ax_acum + ax_liquido;
+
+    div_msg.innerHTML += '<br>' + 'Resumo do mês ' + ax_mes + ', Total recebido = R$' + ax_recebimento + ' – Valor do Imposto = R$' + ax_val_imposto.toFixed(2) + ' – Saldo Final de R$ ' + ax_liquido + ' – Acumulado até o Momento = R$' + ax_acum.toFixed(2);
+}
+
+
+
+</script>
+</html>
