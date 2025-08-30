@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+<body>
+    <h2>Conta de Luz</h2>
+
+    Entre com a quantidade de KWh consumida no mês: <input id="ipt_kwh_consumo">
+    <br>
+    <button onclick="calcular()">Calcular conta de luz</button>
+
+</body>
+
+<script>
+var KWh_preco = 0.85; 
+
+function calcular() {
+
+    var KWh_mes = Number(ipt_kwh_consumo.value);
+    var gasto_mensal = KWh_mes * KWh_preco;
+    
+    if (KWh_mes < 100) {
+     var gasto_mensal = gasto_mensal * 0.9;   
+    }
+    alert('Sua conta foi R$' + gasto_mensal.toFixed(2) + ' nesse mês');
+
+
+}
+
+
+</script>
+</html>

@@ -1,0 +1,318 @@
+1. IF / ELSE
+
+
+1. Permissão para festa
+
+Crie um programa que:  
+
+a) Pergunte ao usuário sua idade.  
+
+b) Ao clicar num botão "Ir pra festa":  
+
+   b1) Caso a idade seja menor que 18, deve aparecer um alert com a frase "Pedir permissão pro responsável" 
+
+   b2) Sempre vai aparecer um alert com a palavra "#partiuFesta" ao final  
+
+OBS: caso tenha 18 anos ou mais, deve somente a segunda mensagem.
+ 
+
+
+2. Controle de Refrigerante
+
+ Joka bebe com certa frequência e quer saber quanto consome de refrigerante em 1 ano. Para ajudá-lo a saber essa informação, crie um programa o qual:   
+
+a) Pergunte quantas latinhas de refrigerante toma por dia  
+
+b) Ao clicar num botão "Quantos refris?", calcule a quantidade de refrigerante que ele consome em 1 ano, considerando que 1 ano possui 365 dias  
+
+c) Exiba na página a quantidade de latinhas que ele consome por ano  
+
+d) Somente caso a quantidade seja a partir de 500, exiba também a frase: "Cuidado com a diabetes!"  
+
+
+
+3. Controle de notas 
+
+Paty é muito estudiosa e sua meta é sempre ser uma aluna fora de série. Na faculdade onde estuda, os "fora de série" são os alunos com média acima de 9,4. Portanto, para ajudá-la, crie um programa o qual:  
+
+a) Pergunte o valor de 3 notas  
+
+b) Ao clicar num botão "Analisar desempenho", calcule a média entre as notas e exiba na tela a frase "Sua média foi de X", onde X é a média calculada  
+
+c) Somente caso a média for acima de 9,4 exibir também a frase "Parabéns, você é fora de série!"  
+
+
+
+4.  Rola a pizza?
+
+Um grupo de amigos costuma se reunir na casa de um deles para comer pizza. Só que eles têm um trato de que o valor da pizza, quando dividido entre os amigos, não deve passar de 20,00 por amigo. Ajude-os criando um programa o qual: 
+
+a) Pergunte o valor da pizza 
+
+b) Pergunte a quantidade de amigos reunidos 
+
+c) Ao clicar em "Rola a pizza?", calcule e exiba o valor que cada amigo vai pagar na pizza com uma frase na página como esta "Cada amigo vai pagar R$X pela pizza" 
+
+d) Somente caso o valor por amigo passe de R$20,00, exiba também a frase "Deu ruim! Pizza muito cara!"
+
+
+
+5. Rola a pizza - parte-2
+
+Refaça a questão anterior de tal forma que a frase do item d) apareça na cor de letra vermelha com itálico e negrito.
+
+
+
+6. Conta de luz
+
+Na cidade de Algoritmolândia a luz custa R$ 0,85 por KWh. Crie um programa que:  
+
+a) Solicite a quantidade de KWh consumida no mês 
+
+b) Ao clicar em "Calcular conta de luz", calcule o valor da conta no mês 
+
+c) Dê um desconto de 10% somente se a quantidade for menor que 100 KWh 
+
+d) Exiba um alert com o valor da conta a ser paga. 
+
+
+
+7. Financiamento da Casa própria 
+
+Crie um programa que auxilie um banco a identificar quem tem renda o suficiente para fazer o financiamento da casa própria.  
+
+a) Solicite o valor da renda familiar 
+
+b) Solicite o valor da prestação 
+
+c) Ao clicar em "Verificar financiamento", exiba na página a mensagem "A prestação corresponde a XX% da renda familiar" (divida a prestação pela renda e multiplique por 100) 
+
+d) Se o valor calculado acima for maior que 30%, exiba também a mensagem abaixo em negrito e em vermelho: 
+
+    "Será necessário complementar a renda familiar"   
+
+
+
+8. Cheque especial 
+
+Criar um programa que auxilie o Banco XPTO a identificar quem entrou no cheque especial.  
+
+a) Solicite o saldo da conta 
+
+b) Solicite o valor do débito (ou seja, valor a tirar da conta) 
+
+c) Ao clicar em "Analisar conta", calcule o novo saldo da conta e exiba a mensagem "O saldo atual da conta corrente é XX". Esta frase deverá estar em negrito e vermelho somente se o saldo for menor que zero.
+ 
+
+
+9. Controle de peso no elevador
+
+Crie um programa que controle o peso médio dentro de um elevador:  
+
+a) Solicite a quantidade de homens que entraram no elevador 
+
+b) Solicite a quantidade de mulheres que entraram no elevador 
+
+c) Ao clicar em "Analisar peso", calcule o peso estimado sendo: homens x 80 somado com mulheres x 60 
+
+d) Exiba na página a mensagem "Este elevador suporta 800 Kg e o peso estimado desta lotação é de XXXkg"  
+
+e) Se o peso estimado for maior que 800, exibir também a mensagem "Será necessário que alguém desça para que o elevador se movimente" - na cor azul.  
+
+
+
+10.  Controle de horas assistindo streaming
+
+Estima-se que os usuários de conteúdo de Streaming gastem cerca de 100 milhões de horas por dia nesse tipo de entretenimento.  
+
+Em média um episódio de seriado americano do estilo SITCOM (Friends, How I Met Your Mother, Dois Homens e Meio, etc.) tem 22min de duração.  
+
+Sabendo disso, crie um programa o qual:  
+
+a) Peça ao usuário para informar a última série (SITCOM) que ele assistiu 
+
+b) Peça ao usuário para informar o total de episódios que ele já assistiu da série 
+
+c) Tenha um botão "Verificar nível" que exiba abaixo dele a seguinte frase:  
+
+     "Vejo que você gosta da série X"   
+
+E se o usuário já gastou mais de 30 horas na série informada, exiba também: "Uau, você realmente gosta dessa série!".  
+
+Obs: Considere 22min como o tempo de duração de 1 episódio.  
+
+
+
+11. Análise da família 
+
+Crie um programa o qual:  
+
+a) Solicite a quantidade de filhos que o usuário tem  
+
+b) Tenha um botão "Analisar família". Ao clicar nele...  
+
+c) Caso tenha 1 ou mais filhos, exiba na tela, abaixo do botão, a frase "Não tem TV" 
+
+d) Caso tenha 2 ou mais filhos, exiba na tela, abaixo da frase em c), a frase "Não tem internet" 
+
+e) Caso tenha 3 ou mais filhos, exiba na tela, abaixo da frase em d), a frase "Não tem video game" 
+
+f) Caso tenha 4 ou mais filhos, exiba na tela, abaixo da frase em e), a frase "Não tem Netflix" 
+
+    OBS: Ou seja, caso o usuário informe que tenha, por exemplo,  4 ou mais filhos, devem aparecer as seguintes frases:  
+
+          Não tem TV  
+
+          Não tem internet  
+
+          Não tem video game  
+
+          Não tem Netflix  
+
+    Se tiver 2 filhos, deve exibir apenas "Não tem TV" e "Não tem internet", de acordo com as validações descritas acima.
+
+ 
+
+12. Análise CNH  
+
+Criar um programa que auxilie uma Autoescola a identificar possíveis novos alunos. 
+
+a) Solicite o nome e a idade de uma pessoa 
+
+b) Ao clicar no botão "Avaliar aluno", se a pessoa tiver 18 anos ou mais emita a mensagem "NOME, vamos tirar a CNH?", mas caso contrário, emita a mensagem "NOME, vai jogar PlayStation!" 
+
+
+
+13. Verificação das finanças
+
+Crie um programa que faça:  
+
+a) Pergunte ao usuário o valor de seu saldo na conta do banco 
+
+b) Ao clicar no botão "Verificar finanças": 
+
+    b1) Caso o saldo em conta for igual a zero (==0), exiba esta frase na cor preta na tela: "Conta zerada".  
+
+    b2) Caso o saldo seja negativo (<0), exiba esta frase na cor vermelha na tela: "Está devendo!".   
+
+    b3) Caso o saldo seja positivo (>0), exiba esta frase na cor azul: "Saldo positivo! sorriso"  
+
+
+
+14. Análise da c/c (Conta Corrente)
+
+Criar um programa que auxilie o Banco XPTO a identificar quem entrou no cheque especial. 
+
+a) Solicite o saldo da conta 
+
+b) Solicite o valor do débito (ou seja, valor a tirar da conta) 
+
+c) Ao clicar em "Analisar conta", calcule o novo saldo da conta e exiba a mensagem "o saldo atual da conta corrente é "XX". Esta frase deverá estar em negrito e em vermelho somente se o saldo for menor que zero ou em itálico e azul caso o saldo for 0 ou mais. 
+
+
+
+15. Análise da média de notas
+
+Crie um programa o qual:  
+
+a) Solicite 2 notas de um aluno  
+
+b) Ao clicar em "Verificar situação", calcule sua média e...  
+
+c) Caso a média seja a partir de 6, exiba um alert com "Parabéns, aprovado!"  
+
+d) Caso a média seja menor que 6, exiba um alert com "Tente outra vez..."  
+
+
+
+16. Controle de peso no elevador - v2
+
+Crie um programa o qual: 
+
+a) Solicite a quantidade de homens e mulheres num elevador 
+
+b) Ao clicar num botão "Ligar elevador", calcule o peso total no elevador, considerando que um homem pesa em média 90kg e uma mulher 70kg 
+
+c) Caso o peso seja até 500, exiba uma frase na cor verde abaixo do botão com a frase Elevador vai se mover, pois está com Xkg 
+
+d) Caso o peso seja maior que 500, exiba uma frase na cor vermelha abaixo do botão com a frase Alguém precisa descer. Precisa perder Xkg para mover o elevador 
+
+
+
+17. Par ou Impar
+
+Crie um programa no qual receba um número e quando o usuário clicar no botão “Analisar” emita uma das mensagens abaixo:
+
+Se o número for par, emitir na cor vermelha com fundo amarelo “Esse número é PAR”
+
+Se o número for impar, emitir cor azul e em negrito “Esse número é impar”
+
+ 
+
+18. Teste de divisibilidade
+
+Crie um programa no qual:
+
+a)      Receba dois números
+
+b)     Tenha o botão “Testar”, verifique se o primeiro número é divisível pelo segundo número. OBS. Um número é divisível por outro quando o resto da divisão entre eles é zero.
+
+c)      Se for divisível mostrar uma imagem com um “positivo”, caso contrário, mostrar uma imagem “negativo”.
+
+ 
+
+19. Mercado BOM DOCE
+
+Mercado BOM DOCE está em promoção, qualquer chocolate custa R$ 3,00 cada e se a compra for acima de uma dúzia de chocolates o preço cai para R$ 2,50 cada um. Criar um programa que auxilie o Mercado a calcular o valor da compra de chocolate 
+
+a) Solicite a quantidade de chocolates comprados 
+
+b) Após clicar num botão "Compra", exiba a mensagem "o valor da sua compra foi de XXX".   
+
+
+
+20. Análise de economia
+
+Crie um programa o qual: 
+
+a) Pergunte ao usuário qual sua meta de economia 
+
+b) Pergunte ao usuário quanto tem guardado 
+
+c) Ao clicar em "Analisar economia"... 
+
+d) Caso a meta tenha sido alcançada ou ultrapassada, exibir, abaixo do botão, a frase Parabéns, meta alcançada!. Caso a meta tenha sido ultrapassada, exibir também a frase Meta ultrapassada em X (onde X é a diferença entre a economia e a meta) 
+
+e) Caso a meta ainda não tenha sido alcançada, exibir, abaixo do botão, a frase Força! Ainda em busca da meta! Falta X (onde X é a diferença entre a meta e a economia) 
+
+ 
+
+ 
+
+21. Análise de frequência do aluno
+
+Crie um programa o qual: 
+
+a) Solicita a frequência do aluno 
+
+b) Ao clicar em "Analisar frequência", deve aparecer, abaixo dele: 
+
+    A imagem de um turista, caso a frequência for menor que 50 OU 
+
+    A imagem de um aluno estudioso, caso a frequência for a partir de 50 
+
+
+ 
+
+22. Análise de temperatura
+
+Crie um programa o qual: 
+
+a) Solicita a temperatura do ambiente 
+
+b) Ao clicar em "Verificar clima", determine se o clima está: 
+
+    Apropriada p/ conservar alimento - Caso a temperatura for menor que 10 
+
+    Inapropriada p/ conservar alimento - Caso a temperatura for a partir de 10 
+c) Em caso de temperatura apropriada, exiba a figura de um alimento em bom estado. Caso contrário, exiba a imagem de um alimento estragado 

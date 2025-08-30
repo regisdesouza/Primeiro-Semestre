@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNH</title>
+</head>
+<body>
+    <h2>Vamos tirar a CNH?</h2>
+    Entre com o seu nome: <input id="ipt_nome"> <br>
+    Entre com a sua idade: <input id="ipt_idade"> <br>
+    <button onclick="avaliar()">Avaliar Aluno</button>
+</body>
+<script>
+    function avaliar() {
+        if (ipt_idade.value >= 18) {
+            alert (`${ipt_nome.value}, vamos tirar a CNH?`);
+        } else {
+            alert (`${ipt_nome.value}, vai jogar PlayStation!`)
+        }
+    }
+</script>
+</html>
