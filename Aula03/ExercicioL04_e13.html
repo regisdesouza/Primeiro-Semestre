@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio 13</title>
+</head>
+<body>
+    <h2>Verificação de Finanças</h2>
+
+    Insira a valor do seu saldo na conta do banco: <input id="ipt_conta"> <br>
+    <button onclick="verificar()">Verificar Finanças</button> <br>
+
+    <div id="div_msg"></div>
+
+</body>
+<script>
+function verificar() {
+    var ax_conta = Number(ipt_conta.value);
+    if (ax_conta == 0) {
+        div_msg.innerHTML = `Conta zerada!`;
+    }
+    if (ax_conta < 0) {
+        div_msg.innerHTML = `Ta devendo!`;
+    }    
+    if (ax_conta > 0) {
+        div_msg.innerHTML = `Saldo positivo! sorria :)`;
+    }    
+}
+
+
+
+</script>
+
+</html>

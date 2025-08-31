@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Financiando a Casa</h2>
-    Entre com o valor da sua renda familiar: <input id="ipt_familia"> <br><br>
+    Entre com o valor da sua renda familiar: <input id="ipt_familia"> <br>
     Entre com o valor da prestação: <input id="ipt_prest"><br>
 
     <button onclick="verificar()">Verificar financiamento</button>
@@ -28,8 +28,7 @@ function verificar() {
 
     if (perc_total >= 30) {
         
-    div_msg.innerHTML += `<span style="color: red;"><br><b>Será necessário complementar a renda familiar<b></span>
-`;
+    div_msg.innerHTML += `<span style="color: red;"><br><b>Será necessário complementar a renda familiar<b></span>`;
 
     }
 }

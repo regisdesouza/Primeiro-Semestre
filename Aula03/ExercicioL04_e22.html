@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <h2>Análise de temperatura</h2>
+
+    Insira a temperatura do ambiente: <input id="ipt_temp"> <br>
+    <button onclick="verificar()">Verificar clima</button> <br>
+
+    <div id="div_msg"></div>
+
+</body>
+<script>
+function verificar() {
+    var ax_temp = Number(ipt_temp.value);
+
+    if (ax_temp <= 10) {
+        div_msg.innerHTML = `<img src="file:///C:/Users/Lenovo/Downloads/pitayabranca-cke.webp">`;
+    }
+    else {
+        div_msg.innerHTML = `<img src="file:///C:/Users/Lenovo/Downloads/laranja-moldada-podre-uma-foto-do-molde-fruta-estragada-restos-de-refei%C3%A7%C3%A3o-espa%C3%A7o-c%C3%B3pia-228237835.webp">`;
+    }
+}
+
+</script>
+</html>

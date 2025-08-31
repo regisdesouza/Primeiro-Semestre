@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16</title>
+</head>
+
+<body>
+    <h2>Controle de peso no elevador - v2</h2>
+
+    Insira a quantidade de homens no elevador: <input id="ipt_homem"> <br>
+    Insira a quantidade de mulheres no elevador: <input id="ipt_mulheres"> <br>
+
+    <button onclick="ligar()">Ligar elevador</button> <br>
+
+    <div id="div_msg"></div>
+    
+
+</body>
+<script>
+
+function ligar() {
+    var ax_peso_homem = 90;
+    var ax_peso_mulher = 70;
+    var ax_total_homem = Number(ipt_homem.value) * ax_peso_homem;
+    var ax_total_mulher = Number(ipt_mulheres.value) * ax_peso_mulher;
+    var ax_total = ax_total_homem + ax_total_mulher;
+    var ax_total_500 = ax_total - 500;
+    if (ax_total <= 500) {
+        div_msg.innerHTML = `<span style="color: green">Elevador vai se mover, pois está com ${ax_total}kg </span>`;
+    }
+    else {
+        div_msg.innerHTML = `<span style="color: red">Alguém precisa descer, pois está com ${ax_total_500}kg a mais.</span>`;
+    }
+
+}
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 21</title>
+</head>
+<body>
+    <h2>Análise de frequência do aluno</h2>
+
+    Insira a frequência do aluno: <input id="ipt_freq"> <br>
+
+    <button onclick="analisar()">Analisar frequência</button> <br>
+
+    <div id="div_msg"></div>
+
+</body>
+
+<script>
+
+function analisar() {
+    ax_freq = Number(ipt_freq.value);
+
+    if (ax_freq < 50) {
+        div_msg.innerHTML = `<img src="file:///C:/Users/Lenovo/Downloads/xsebraepe_sebraepe_image_909.jpeg.pagespeed.ic.OuMt_8cNUk.webp">`;
+    }
+    else{
+        div_msg.innerHTML = `<img src="file:///C:/Users/Lenovo/Downloads/aprender-a-estudar-1.webp">`;
+       
+
+    }
+}
+</script>
+</html>

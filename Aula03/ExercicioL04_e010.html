@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio 10</title>
+</head>
+<body>
+    <h2>Controle de horas assistindo streaming</h2>
+
+    Insira a última série SITCOM que você assistiu: <input id="ipt_serie"> <br>
+    <span style = "color: gray;">Estilo SITCOM(Friends, How I Met Your Mother, Dois homens e Meio, etc.)</span><i></i><br><br>
+    Insira a quantidade de episódios que você ja assistiu da série? <input id="ipt_episodios"> <br><br>
+
+    <button onclick="verificar()">Verifcar nível</button> <br>
+    <div id="div_msg"></div> <br>
+
+</body>
+
+<script>
+
+function verificar() {
+    
+    var ax_serie = ipt_serie.value;
+    var ax_episodios = ipt_episodios.value;
+    div_msg.innerHTML =  `Vejo que você gosta da série ${ax_serie}`;
+    if (ax_episodios > 82) {
+    div_msg.innerHTML += `<br>Uau, você realmente gosta dessa série!`;    
+    }
+    
+}
+
+</script>
+
+</html>

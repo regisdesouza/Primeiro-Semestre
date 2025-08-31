@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    <h2>Mercado BOM DOCE</h2>
+
+    Insira a quantidade de chocolates comprados: <input id="ipt_choco"> <br>
+    <button onclick="comprar()">Compra</button><br>
+    <div id="div_msg"></div>
+</body>
+
+<script>
+function comprar() {
+    var ax_preco_chocolate = 3;
+    var ax_qtde_chocolate = Number(ipt_choco.value);
+    var ax_total = ax_preco_chocolate * ax_qtde_chocolate;
+    var ax_desc = ax_qtde_chocolate * 2.50;
+
+    div_msg.innerHTML = `o valor da sua compra foi R$${ax_total}.`;
+
+    if (ax_qtde_chocolate >= 6) {
+        div_msg.innerHTML = `o valor da sua compra foi R$${ax_desc.toFixed(2)}`;
+       
+    }
+}
+
+
+</script>
+
+</html>
