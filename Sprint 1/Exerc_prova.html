@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sprint 1 </title>
+</head>
+
+<body>
+<h2> Controle de viagens</h2>
+
+Insira a distancia da corrida em km: <input id="ipt_distancia"><br>
+Insira o valor do pedagio: <input id="ipt_pedagio"><br>
+Insira a bandeira: <input id="ipt_bandeira"><br>
+<i>somente 1, 2 ou 3</i><br>
+
+<button onclick="acumular()">Acumular corrida realizada</button><br>
+
+<div id="div_msg"></div>
+
+</body>
+
+<script>
+var ax_corrida = 0;
+var ax_valor_dia = 0;
+
+function acumular() {
+    var ax_distancia = Number(ipt_distancia.value);
+    var ax_pedagio = Number(ipt_pedagio.value);
+    var ax_preco_corrida = ax_distancia * 1.25;
+    var ax_bandeira = Number(ipt_bandeira.value);
+
+    if (ax_distancia > 50) {
+        ax_corrida++;
+        var ax_desconto = ax_preco_corrida * 0.9;
+
+        if (ax_bandeira == 1) {
+            var ax_bandeira1 = (ax_desconto + ax_pedagio) * 0.965;
+            ax_valor_dia += ax_bandeira1;
+            div_msg.innerHTML += `<br>${ax_corrida}ª corrida de ${ax_distancia}km 
+            com o valor de R$${ax_bandeira1.toFixed(2)} 
+            - Acumulado do dia R$${ax_valor_dia.toFixed(2)}`;
+        }
+        else if (ax_bandeira == 2) {
+            var ax_bandeira2 = (ax_desconto + ax_pedagio) * 1.117;
+            ax_valor_dia += ax_bandeira2;
+            div_msg.innerHTML += `<br>${ax_corrida}ª corrida de ${ax_distancia}km 
+            com o valor de R$${ax_bandeira2.toFixed(2)} 
+            - Acumulado do dia R$${ax_valor_dia.toFixed(2)}`;
+        }
+        else if (ax_bandeira == 3) {
+            var ax_bandeira3 = (ax_desconto + ax_pedagio) * 1.223;
+            ax_valor_dia += ax_bandeira3;
+            div_msg.innerHTML += `<br>${ax_corrida}ª corrida de ${ax_distancia}km 
+            com o valor de R$${ax_bandeira3.toFixed(2)} 
+            - Acumulado do dia R$${ax_valor_dia.toFixed(2)}`;
+        }
+    } else {
+        ax_corrida++;
+        var ax_valor_total = ax_preco_corrida + ax_pedagio;
+
+        if (ax_bandeira == 1) {
+            ax_valor_total = ax_valor_total * 0.965;
+            ax_valor_dia += ax_valor_total;
+            div_msg.innerHTML += `<br>${ax_corrida}ª corrida de ${ax_distancia}km 
+            com o valor de R$${ax_valor_total.toFixed(2)} 
+            - Acumulado do dia R$${ax_valor_dia.toFixed(2)}`;
+        }
+        else if (ax_bandeira == 2) {
+            ax_valor_total = ax_valor_total * 1.117;
+            ax_valor_dia += ax_valor_total;
+            div_msg.innerHTML += `<br>${ax_corrida}ª corrida de ${ax_distancia}km 
+            com o valor de R$${ax_valor_total.toFixed(2)} 
+            - Acumulado do dia R$${ax_valor_dia.toFixed(2)}`;
+        }
+        else if (ax_bandeira == 3) {
+            ax_valor_total = ax_valor_total * 1.223;
+            ax_valor_dia += ax_valor_total;
+            div_msg.innerHTML += `<br>${ax_corrida}ª corrida de ${ax_distancia}km 
+            com o valor de R$${ax_valor_total.toFixed(2)} 
+            - Acumulado do dia R$${ax_valor_dia.toFixed(2)}`;
+        }
+    }
+}
+</script>
+</html>
