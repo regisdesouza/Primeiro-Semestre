@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 12</title>
+</head>
+<body>
+    <h2>Múltiplo de 5</h2>
+    Insira um número maior do que zero: <input id="iptNum"> <br>
+    <button onclick="analisar()">Múltiplo de 5</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+<script>
+
+    function analisar() {
+    var ax_num = Number(iptNum.value);
+    var resto = ax_num % 5;
+    if (ax_num <= 0) {
+        alert(`Digite um número maior do que zero!`)
+    }else 
+        if (resto == 0) {
+            divMsg.innerHTML = `Perfeito esse número é múltiplo por 5!`;
+        } else if(resto == 1){
+            divMsg.innerHTML = `Vich, sobrou um`;
+            
+        }else if(resto == 2){
+            divMsg.innerHTML = `Para esse o resto é dois`;
+        }else if(resto == 3){
+            divMsg.innerHTML = `Com mais dois daria certo`;
+
+        }else if(resto == 4){
+            divMsg.innerHTML = `Só faltou 1 para ser múltiplo de 5!`;
+
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc09</title>
+</head>
+
+<body>
+    <h2>Calculo IMC</h2>
+
+    Insira seu peso: <input id="iptPeso"> <br>
+    Insira sua altura: <input id="iptAltura"> <br>
+
+    <button onclick="calcular()">Calcular IMC</button>
+
+    <div id="divMsg"></div>
+</body>
+
+<script>
+    function calcular() {
+        var ax_altura = Number(iptAltura.value);
+        var ax_peso = Number(iptPeso.value);
+        var IMC = ax_peso / (ax_altura * ax_altura);
+
+        divMsg.innerHTML = `Seu IMC: ${IMC.toFixed(1)}`
+        if (IMC < 18.5) {
+             divMsg.innerHTML += ` Abaixo do peso`;
+
+        }else if(IMC <= 24.9){
+            divMsg.innerHTML += ` Peso normal`;
+
+         }else if(IMC <= 29.9){
+            divMsg.innerHTML += ` Acima do peso`;
+             
+            }else {
+            divMsg.innerHTML += ` Cuidado, risco de obesidade`;
+             }
+    }
+
+        
+</script>
+
+
+
+</html>

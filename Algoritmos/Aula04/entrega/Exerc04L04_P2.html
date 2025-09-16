@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc04</title>
+</head>
+<body>
+    <h2>Avaliacao de Peso infantil!</h2>
+
+    Insira o peso da crianca de 5 anos: <input id="iptPeso"><br>
+    <button onclick="pesar()">Pesar</button><br>
+
+    <div id="divMsg"></div>
+
+
+</body>
+
+<script>
+function pesar() {
+    if (iptPeso.value <= 13.5) {
+        divMsg.innerHTML = "Abaixo doPeso!"}
+        else if (iptPeso.value == 18.3) {
+        divMsg.innerHTML = "Peso perfeito!"
+    }else if (iptPeso.value > 21.2) {
+        divMsg.innerHTML = "Acima do Peso!"
+        
+    }else{
+        divMsg.innerHTML = "Peso na media"
+    }
+}
+</script>
+
+</html>

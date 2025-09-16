@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc03</title>
+</head>
+
+<body>
+    <h2>Temperatura Ideal</h2>
+
+    Insira a Temperatura ambiente: <input id="iptTemperatura"><br>
+    <button onclick="medir()">Medir Temperatura</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+
+<script>
+    function medir() {
+        if (iptTemperatura.value > 31) {
+            divMsg.innerHTML = "Calor escaldante";
+        } else {
+            divMsg.innerHTML = "Com calor";
+        }
+        if (iptTemperatura.value <= 24) {
+            divMsg.innerHTML = "Confortavel";
+
+        } if (iptTemperatura.value <= 21) {
+            divMsg.innerHTML = "Com frio";
+
+        } if (iptTemperatura.value < 14) {
+            
+            divMsg.innerHTML = "Congelante";
+        } {
+
+        }
+
+    }
+
+</script>
+
+</html>

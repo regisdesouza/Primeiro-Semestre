@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 10</title>
+</head>
+
+<body>
+
+    <h2>Limite de Velocidade</h2>
+
+    Insira a velocidade: <input id="iptVelocidade"><br>
+    Insira o limite de velocidade da via <input id="iptLimite"><br>
+
+    <button onclick="verificar()">Verificar limite</button> <br>
+
+    <div id="divMsg"></div>
+
+</body>
+
+<script>
+    function verificar() {
+        var ax_velocidade = Number(iptVelocidade.value);
+        var ax_limite = Number(iptLimite.value);
+
+        if (ax_velocidade <= ax_limite) {
+            divMsg.innerHTML = `Velocidade dentro do limite. Boa direção!`;
+        } else if (ax_velocidade >= ax_limite * 1.2) {
+            divMsg.innerHTML = `Multa grave! Velocidade muito acima do permitido.`;
+
+        } else {
+            divMsg.innerHTML = `Atenção! Excedendo o limite permitido.`;
+
+        }
+    }
+</script>
+
+</html>

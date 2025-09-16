@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc01</title>
+</head>
+
+<body>
+    <h2>Descubra sua vantagem competitiva</h2>
+
+    Insira a sua altura: <input id="iptAltura"><br>
+    <button onclick="analisar()">Analisar Estatura</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+
+<script>
+
+    function analisar() {
+        var ax_altura = iptAltura.value;
+        if (ax_altura > 0) {   
+            if (ax_altura <= 1.65) {
+                divMsg.innerHTML = "Você pode ser piloto de corrida"
+            } else if (ax_altura <= 1.80) {
+                divMsg.innerHTML = "você pode ser jogador de futebol"
+            } else {
+                divMsg.innerHTML = "você pode ser jogador de volei ou basquete"
+            }
+        } else{
+            alert('Insira um numero valido')
+        }
+    }
+</script>
+
+</html>

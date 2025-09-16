@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc02</title>
+</head>
+
+<body>
+    <h2>Classe social em tuvalu</h2>
+
+    Insira sua renda familiar mensal: <input id="iptRendaF"><br>
+    <button onclick="analisar()">Analisar Classe</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+
+<script>
+    function analisar() {
+
+        if (iptRendaF.value > 9500) {
+            divMsg.innerHTML = "Classe A"
+        } else if (iptRendaF.value > 2500) {
+            divMsg.innerHTML = "Classe B"
+        } else if (iptRendaF.value > 900) {
+            divMsg.innerHTML = "Classe C"
+        } else if (iptRendaF.value > 250) {
+            divMsg.innerHTML = "Classe D"
+        } else {
+            divMsg.innerHTML = "Classe E"
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 14</title>
+
+</head>
+<body>
+    <h2>Representação de humor 1.0</h2>
+    Entre com o seu humor atual:
+    <select id="sel_humor">
+        <option value="0">selecione...</option>
+        <option value="1">Feliz</option>
+        <option value="2">Triste</option>
+        <option value="3">Bravo</option>
+        <option value="4">Cansado</option>
+        <option value="5">Surpreso</option>
+    </select> <br><br>
+
+
+    <button onclick="mostrar()">Mostrar Humor</button><br><br><br>
+
+    <div id="divMsg"></div>
+
+</body>
+
+<script>
+  function mostrar() {
+        var humor = sel_humor.value;
+        var img = "";
+
+        if (humor == "1") {
+            img = "<img src=/home/regisz/Primeiro-S/Primeiro-Semestre/Aula04/fe.jpg>";
+        } else if (humor == "2") {
+            img = "<img src=/home/regisz/Primeiro-S/Primeiro-Semestre/Aula04/images.jpg>";
+        } else if (humor == "3") {
+            img = "<img src=/home/regisz/Primeiro-S/Primeiro-Semestre/Aula04/naruto-bravo.jpg>";
+        } else if (humor == "4") {
+            img = "<img src=/home/regisz/Primeiro-S/Primeiro-Semestre/Aula04/ca7ab2086fdf244966f4a099503beb0d.jpg>";
+        } else if (humor == "5") {
+            img = "<img src=/home/regisz/Primeiro-S/Primeiro-Semestre/Aula04/a5c1aa9fbdd3c1b55fe613e56686ffbd6afc352f_hq.jpg>";
+        }
+
+        divMsg.innerHTML = img;
+    }
+</script>
+
+</html>
