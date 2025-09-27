@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 09</title>
+</head>
+<body>
+    <h2>Processo seletivo para pilotos</h2>
+
+    Insira o intervalo da altura mininima desejada : <input id="altMin"><br>
+    Insira o invertalo da altura maxima desejada: <input id="altMax"> <br>
+    Insira o nome do candidato: <input id="iptNome"><br>
+    Insira a altura do candidato: <input id="iptAlt"><br>
+
+    <button onclick="verificar()">Verificar candidato</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+
+<script>
+function verificar() {
+    var altura_minima = Number(altMin.value);
+    var altura_maxima = Number(altMax.value);
+    var nome = String(iptNome.value);
+    var altura = Number(iptAlt.value);
+
+    if (altura_minima > 1 && altura_maxima > altura_minima) {
+        if(altura >= altura_minima && altura <= altura_maxima){
+
+            divMsg.innerHTML = `O candidato ${nome}, com altura de ${altura} metros, participará do processo de seleção de piloto`;
+        }else { 
+            divMsg.innerHTML = `Infelizmente, o candidato ${nome}, com altura de ${altura} metros, não atende os requisitos da seleção`;
+        }
+        }else{
+        alert("Intervalo da altura de seleção é inválida! A altura inicial deve ser maior que 1 e a altura final deve ser maior que a altura inicial")
+    }
+}
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc05</title>
+</head>
+<body>
+    <h2>Alerta de Desconforto Térmico</h2>
+
+    Insira a temperatura atual: <input id="ipttempAtual"><br>
+   
+    <button onclick="analisar()">Analisar clima</button><br>
+
+    <div id="divMsg"></div>
+
+
+</body>
+
+<script>
+    function analisar() {
+    var tempAtual = Number(ipttempAtual.value);
+
+    if (ipttempAtual.value == ``) {
+        alert(`escreva algo!`)
+    }else{
+        if (tempAtual < 21 || tempAtual > 24) {
+            alert("Alerta de desconforto!")
+        }if(tempAtual < 21){
+            alert("As pessoas vão ter hipotermia")
+        }if(tempAtual > 24) {
+            alert( "As pessoas vão derreter")
+        }
+    }
+    }
+</script>
+
+</html>
