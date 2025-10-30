@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 01</title>
+</head>
+<body>
+    <h1>Carona Compartilhada:</h1>
+
+    Insira quantas pessoas vão entrar no carro: <input id="qtdePessoasNoCarro"><br>
+    <button onclick="entrar()">#Partiu Carona</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+<script>
+    function entrar() {
+        var qtdePessoas = Number(qtdePessoasNoCarro.value);
+        divMsg.innerHTML = ``;
+
+        for (let index = 1; index <= qtdePessoas; index++) {
+        
+        if (index == 1) {
+            divMsg.innerHTML += `<br>Entrou o ${index}º passageiro (que é o(a) motorista)`;
+            
+        }else if(index > 5 ){
+
+        divMsg.innerHTML += `<br>O ${index}º passageiro terá que esperar!`;
+        }else{
+
+            divMsg.innerHTML += `<br>Entrou o ${index}º passageiro`;
+        }
+            
+        }
+    }
+</script>
+</html>

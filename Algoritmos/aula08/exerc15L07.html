@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 15</title>
+</head>
+<body>
+    quantos dias de treino mensalmente? <input id="diasTotal"><br>
+    <button onclick="exibirRotina()">Exibir rotina</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+<script>
+  function exibirRotina() {
+    let intervalo = diasTotal.value;
+    
+    let rotina = "";
+    let dia = 1;
+
+    while (dia <= 30) {
+        if (dia % intervalo == 0) {
+            rotina += "Dia " + dia + " - Musculação<br>";
+        
+        }else if(dia == 1){
+            rotina += "Dia " + dia + " - Musculação<br>";
+
+        } else{
+            rotina += "Dia " + dia + " - Comer, dormir e etc<br>";
+        }
+        dia++;
+    }
+
+    divMsg.innerHTML = rotina;
+  }
+</script>
+</html>

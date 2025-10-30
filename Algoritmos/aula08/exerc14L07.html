@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 14</title>
+</head>
+<body>
+    Insira o inicio do intervalo: <input id="inicioSeq"><br>
+    Insira o fim do intervalo: <input id="finalSeq"><br>
+
+    <button onclick="calcular()">Curto 3 e 5!</button>
+
+    <div id="divMsg"></div>
+</body>
+<script>
+var numUm = Number(inicioSeq.value);
+var numDois = Number(finalSeq.value);
+
+
+function calcular() {
+  while (numUm <= numDois) {
+    if (numUm % 3 === 0 && numUm % 5 === 0) {
+        divMsg.innerHTML += `O número ${numUm} é TRI PENTA!<br>`;
+    } else if (numUm % 3 === 0) {
+        divMsg.innerHTML += `O número ${numUm} é TRI!<br>`;
+    } else if (numUm % 5 === 0) {
+        divMsg.innerHTML += `O número ${numUm} é PENTA!<br>`;
+    }
+    numUm++; 
+}
+
+}
+</script>
+</html>

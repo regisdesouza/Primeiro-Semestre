@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 10</title>
+</head>
+<body>
+    <h2>Alugueis pagos com pedras de ouro</h2>
+
+    Insira quanto vc tem no banco? <input id="iptBanco" type="number"> <br>
+    Insira o valor do aluguel? <input id="iptAluguel" type="number"><br>
+    Insira a quantidade de pedras de ouro que vc possui: <input id="iptPedras" type="number"><br>
+    Insira a quantidade de meses que vc pretende viver: <input type="number" id="iptMeses"><br>
+
+    <button onclick="calcular()">Ver resultado</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+
+<script>
+function calcular() {
+
+    
+    var valorBanco= Number(iptBanco.value);
+    var valorALuguel = Number(iptAluguel.value);
+    var qtdePedras = Number(iptPedras.value);
+    var qtdeMeses = Number(iptMeses.value);
+
+    var index = 0; 
+    var valorPedra = 10000;
+    var valorInicialBanco = valorBanco;
+    var valorFinalBanco = 0
+
+    while (index < qtdeMeses) {
+        index++
+
+
+        if (valorInicialBanco >= valorALuguel) {
+        valorInicialBanco = valorInicialBanco - valorALuguel;
+        valorFinalBanco = valorInicialBanco;
+        }
+
+        else{ 
+            qtdePedras -= 1;
+            valorInicialBanco += 10000;
+            valorFinalBanco = valorInicialBanco - valorALuguel;
+            valorInicialBanco = valorFinalBanco;
+        } 
+        if (qtdePedras <= 0 && valorFinalBanco < valorALuguel){
+            divMsg.innerHTML += `faliu kk`;
+            break;
+        }
+        
+        divMsg.innerHTML += `Mês ${index} saldo inicial no banco ${valorInicialBanco} - saldo de pedras = ${qtdePedras} – saldo final no banco - ${valorFinalBanco}<br>`;
+        
+    }
+        
+    }
+
+
+
+</script>
+
+
+</html>

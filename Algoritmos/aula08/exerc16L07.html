@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 16</title>
+</head>
+<body>
+    Quantos elefantes você quer que incomodem?<input id="qtdeElefantes"><br>
+
+    <button onclick="atazanar()">Atazanar a médium</button>
+
+    <div id="divMsg"></div>
+
+    <script>
+        function atazanar() {
+            var numElefantes = Number(qtdeElefantes.value);
+            var resultado = '';
+            var contagem= 1;
+
+
+            while (contagem <= numElefantes) {
+                var frase = "1 elefante incomoda muita gente!<br>";
+                var incomodam = '';
+                var repeticoes = 1;
+                
+                while (repeticoes <= contagem) {
+                    incomodam += 'incomodam, ';
+                    repeticoes++;
+                }
+                frase += contagem + " elefantes, " + incomodam + ", muito mais!<br><br>";
+                resultado += frase;
+                contagem++;
+            }
+
+            divMsg.innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
+

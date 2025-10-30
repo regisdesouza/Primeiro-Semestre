@@ -1,0 +1,115 @@
+
+Controle de Produção de Bolos na Confeitaria Doce Sabor 
+
+
+Na confeitaria Doce Sabor, a chef Gabriela Canela é responsável pela produção diária de bolos artesanais.
+
+Após um período de alta demanda, ela percebeu que a produção estava apresentando variações no rendimento e no tempo de preparo.
+
+Para entender melhor o desempenho da equipe e dos equipamentos, Gabriela decidiu desenvolver um programa que fizesse o controle da produção e gerasse uma análise detalhada dos resultados.
+
+Você foi contratado para criar esse programa.
+
+Com base no enunciado, crie um programa o qual:
+
+a) Solicite ao usuário as seguintes informações: 
+
+  - O nome do bolo produzido (não pode estar vazio); 
+
+  - A quantidade total de bolos produzidos no dia (produz ao mínimo 5 por dia); 
+
+  - A quantidade de bolos com defeito que não poderão ser vendidos (o máximo deve ser a quantidade produzida); 
+
+  - O peso total de farinha utilizada, em kg (deve ser maior que 0); 
+
+  - O tempo total gasto na produção, em minutos (deve ser maior ou igual a 15). 
+
+  
+
+b) Ao clicar no botão "Analisar Produção", o programa deve:  
+
+b1) Verificar se as entradas estão preenchidas corretamente, caso contrário, exibir todas as mensagens de erro em um único texto e abaixo do botão, conforme mensagens abaixo:  
+
+         “Erro de preenchimento! Verifique as informações e confirme:
+          O nome do bolo deve estar preenchido.
+          A quantidade total de bolos produzidos deve ser no mínimo 5.  
+          A quantidade máxima de bolos defeituosos deve ser igual ou menor ao total produzido. 
+          O peso da farinha deve ser maior que 0. 
+          O tempo total gasto na produção deve ser maior que 15 minutos.” 
+
+b2) Caso todas as entradas estejam válidas: 
+
+  - Calcular o total de bolos válidos, subtraindo os defeituosos do total de bolos produzidos. 
+
+  - Calcular o percentual de eficiência da produção (proporção de bolos válidos em relação ao total).  
+
+  - Calcular a média de farinha utilizada por bolo, com base no total de farinha e o total de bolos produzidos. 
+
+  - Calcular o total de farinha desperdiçada na produção de bolos defeituosos, com base na média de farinha e a quantidade. 
+
+  - Calcular o tempo médio de preparo por bolo, com base no tempo total e o total bolos produzidos. 
+
+  - Exibir o relatório com os resultados obtidos, contendo as informações abaixo: 
+
+        ANÁLISE DA PRODUÇÃO   
+
+        Bolo: NNNN 
+
+        Produzidos: AAAA | Defeituosos: BBBB 
+
+        Bolos Válidos: CCCC | Eficiência: DDDD% 
+
+        Farinha Total: EEEE kg | Média de Farinha por Bolo: FFFF kg 
+
+        Total de Farinha Desperdiçada: GGGG kg 
+
+        Tempo Total: HHHH min | Tempo Médio por Bolo: IIII min 
+
+b3) Após exibir o relatório, o programa deve analisar o desempenho da produção e apresentar mensagens complementares conforme as condições abaixo: 
+
+  - Caso o percentual de eficiência seja menor que 75%, exibir "Produção abaixo do ideal – necessário revisar o processo de preparo." 
+
+  - Caso o percentual de eficiência seja entre 75% e 90%, exibir "Produção boa – rendimento dentro do esperado." 
+
+  - Caso o percentual de eficiência seja superior a 90%, exibir "Produção excelente – ótimo desempenho da equipe."   
+
+  - Em caso de "Produção Excelente", caso a média de farinha seja menor que 0,8 kg (oitocentos gramas) e o tempo médio seja menor que 20 minutos por bolo, exibir logo abaixo da análise anterior: "Processo otimizado – excelente aproveitamento de tempo e ingredientes." 
+
+  
+
+c) Após as análises, o programa deve realizar uma projeção de eficiência da produção, considerando que a equipe está se aperfeiçoando a cada dia, aumentando a eficiência.
+
+Para isso, ao finalizar as análises, o programa deve solicitar a quantidade de dias em que o usuário deseja projetar a eficiência da sua equipe, insistindo novamente na entrada, enquanto o valor for menor ou igual a 0 (use o comando "prompt()", para abrir uma caixa de diálogo interativa através do JS), exibindo "Projeção inválida! A quantidade de dias deve ser maior que 0!".
+
+A cada dia de projeção informado, o programa deve aplicar um acréscimo fixo de 2% na eficiência anterior e, a cada 3 dias, deve ser aplicado um bônus de acréscimo fixo de 0.5%, exibindo o resultado diário como abaixo:  
+
+        PROJEÇÃO DE EFICIÊNCIA: 7 DIAS       (valor informado no prompt)
+
+        Dia 1 - Eficiência estimada: AA%         (+2% de eficiência) 
+
+        Dia 2 - Eficiência estimada: BB%         (+2% de eficiência) 
+
+        Dia 3 - Eficiência estimada: CC%         (+ 2.5% de eficiência) 
+
+        Dia 4 - Eficiência estimada: DD%        (+2% de eficiência) 
+
+        Dia 5 - Eficiência estimada: EE%         (+2% de eficiência) 
+
+        Dia 6 - Eficiência estimada: FF%         (+ 2.5% de eficiência) 
+
+        Dia 7 - Eficiência estimada: GG%        (+2% de eficiência) 
+
+OBS: o valor fixo do acréscimo na projeção deve ser somado ao valor anterior da eficiência (não aplicar 2% de acréscimo), não podendo ultrapassar 100% (veja os exemplos!). 
+
+OBS2: Não crie outras inputs para receber os dias de projeção. Deve utilizar o comando "prompt()", para forçar a interação do usuário com a caixa de diálogo. 
+O comando "prompt()" gera uma caixa de diálogo (como o alert) que possui um campo para inserção. Ao confirmar, o valor inserido no campo é  retornado (e pode ser armazenado em uma variável, por exemplo).
+
+       exemplo de uso - prompt(): 
+
+       var nome= prompt("Qual é o seu nome?");
+
+       if (nome.toUpperCase() == "JP") {
+          alert("Legal! Eu também sou JP!");
+       }
+
+OBS3: Para insistir novamente na entrada do prompt(), você pode criar uma variável auxiliar com o prompt() e uma estrutura de repetição para validar que enquanto o valor da variável for "inválido", executa novamente o prompt(), até que seja informado um valor válido para reatribuir na variável.

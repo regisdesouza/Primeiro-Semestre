@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 14</title>
+</head>
+<body>
+    <h1>Dividibilidade</h1>
+    
+Insira o primeiro numero do intervalo numerico: <input id="iptNumUm"><br>
+Insira o segundo numero do intervalo numerico: <input id="iptNumDois"><br>
+Insira um numero entre 3 e 13 para fazer do teste de divisibilidade: <input id="iptDivisor"><br>
+
+<button onclick="calcular()">Divisível</button><br>
+
+<div id="divMsg"></div>
+
+</body>
+
+<script>
+var numUm = Number(iptNumUm.value);
+var numDois = Number(iptNumDois.value);
+var divisor = Number(iptDivisor.value);
+
+function calcular() {
+    while(numUm <= numDois){
+        if (numUm % divisor !== 0) {
+            divMsg.innerHTML += `${numUm}<br>`;
+            
+        }else{
+            divMsg.innerHTML += ``;
+            
+        }
+        numUm++
+    }
+}
+</script>
+</html>

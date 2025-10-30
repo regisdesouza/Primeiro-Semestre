@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria</title>
+</head>
+<body>
+    <h1>Doceria gourmet</h1>
+
+    <h2>Macarons</h2>
+    Insira a quantidade: <input id="iptQtdeMacarons" type="number"><br>
+    Insira o preço da unidade: <input id="iptPrecoMacaron" type="number"><br>
+
+    <h2>Brigadeiros</h2>
+    Insira a quantidade: <input id="iptQtdeBrigadeiros" type="number"><br>
+    Insira o preço da unidade: <input id="iptPrecoBrigadeiro" type="number"><br>
+
+    <h2>Cupcake</h2>
+    Insira a quantidade: <input id="iptQtdeCupcakes" type="number"><br>
+    Insira o preço da unidade: <input id="iptPrecoCupcake" type="number"><br>
+
+    <h2>Cheesecake</h2>
+    Insira a quantidade: <input id="iptQtdeCheesecake" type="number"><br>
+    Insira o preço da unidade: <input id="iptPrecoCheesecake" type="number"><br>
+
+    <button onclick="verificar()">Verificar vendas</button><br>
+
+    <div id="divMsg"></div>
+</body>
+<script>
+    function verificar() {
+        var qtdeMacarons = Number(iptQtdeMacarons.value);
+        var precoMacaron = Number(iptPrecoMacaron.value);
+        var qtdeBrigadeiros = Number(iptQtdeBrigadeiros.value);
+        var precoBrigadeiro = Number(iptPrecoBrigadeiro.value);
+        var qtdeCupcakes = Number(iptQtdeCupcakes.value);
+        var precoCupcake = Number(iptPrecoCupcake.value);
+        var qtdeCheesecake = Number(iptQtdeCheesecake.value);
+        var precoCheesecake = Number(iptPrecoCheesecake.value);
+
+        var contadorVendas = 1;
+        var total = 0;
+        divMsg.innerHTML = ``;
+
+        if (qtdeMacarons < 0 || precoMacaron < 0 || qtdeBrigadeiros < 0 || precoBrigadeiro < 0 || qtdeCupcakes < 0 || precoCupcake < 0 || qtdeCheesecake < 0 || precoCheesecake < 0) {
+            alert(`Valores nao podem ser negativos`)            
+        }else{ 
+
+        var contadorMacaron = 0;
+        while (contadorMacaron < qtdeMacarons) {
+            total += precoMacaron;
+            contadorVendas++;
+            contadorMacaron++;
+            divMsg.innerHTML += `Venda ${contadorVendas} - <img src="/home/regisz/Primeiro-S/Primeiro-Semestre/Algoritmos/aula10/macaron.jpg" width="100"> - ${precoMacaron.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>`;
+        }
+
+    
+        var contadorBrigageiro = 0;
+        while (contadorBrigageiro < qtdeBrigadeiros) {
+            divMsg.innerHTML += `Venda ${contadorVendas} - <img src="/home/regisz/Primeiro-S/Primeiro-Semestre/Algoritmos/aula10/brigadeiro.jpg" width="100"> - ${precoBrigadeiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>`;
+            total += precoBrigadeiro;
+            contadorVendas++;
+            contadorBrigageiro++;
+        }
+
+        
+        var contadorCupcake = 0;
+        while (contadorCupcake < qtdeCupcakes) {
+            divMsg.innerHTML += `Venda ${contadorVendas} - <img src="/home/regisz/Primeiro-S/Primeiro-Semestre/Algoritmos/aula10/cupcake.jpg" width="100"> - ${precoCupcake.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>`;
+            total += precoCupcake;
+            contadorVendas++;
+            contadorCupcake++;
+        }
+
+        
+        var contadorCheesecake = 0;
+        while (contadorCheesecake < qtdeCheesecake) {
+            divMsg.innerHTML += `Venda ${contadorVendas} - <img src="/home/regisz/Primeiro-S/Primeiro-Semestre/Algoritmos/aula10/cheesecake.jpg" width="100"> - ${precoCheesecake.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>`;
+            total += precoCheesecake;
+            contadorVendas++;
+            contadorCheesecake++;
+        }
+
+        
+        divMsg.innerHTML += `<br>Com a quantidade de ${qtdeMacarons} Macarons, ${qtdeBrigadeiros} Brigadeiros, ${qtdeCupcakes} Cupcakes e ${qtdeCheesecake} Cheesecakes, a venda totalizará ${total.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`;
+    }
+        }
+
+
+
+    
+</script>
+</html>

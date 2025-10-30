@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 02</title>
+</head>
+<body>
+    Sua resposta: <input id="iptRes"><br>
+    <button onclick="responder()">Diga algo sobre a matéria de Algoritmos</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+<script>
+axVezes = 0;
+
+function responder() {
+    while(axVezes < 7){
+        axVezes++
+        divMsg.innerHTML += `<br>${iptRes.value}`;
+    }
+}
+</script>
+</html>

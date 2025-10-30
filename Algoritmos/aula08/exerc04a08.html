@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 04</title>
+</head>
+<body>
+    Insira o nome da pessoa que vc mais ama: <input id="iptAmado"><br>
+    Insira o quanto de vezes vc ama ela: <input id="iptVezes" type="number"><br>
+    <button onclick="expressar()">Expressar amor</button><br>
+
+    <div id="divMsg"></div>
+    
+</body>
+<script>
+    var nomeAmado = iptAmado.value;
+    var vezesQueAma = Number(iptVezes.value);
+    var vezesTotal = 0;
+
+    function expressar() {
+        while (vezesTotal < vezesQueAma) {
+            vezesTotal++
+            divMsg.innerHTML += `<br>${vezesTotal} - ${nomeAmado}, eu te amo! Sempre lembre disso!`;
+            console.log(vezesTotal)
+        }
+    }
+</script>
+</html>

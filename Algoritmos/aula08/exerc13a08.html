@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 13</title>
+</head>
+<body>
+
+<h1>Papagaio Repetitivo</h1>
+
+Insira um numero: <input id="iptNum"><br>
+Insira uma frase: <input id="iptFrase"><br>
+
+<button onclick="repetir()">Papagaio Repetitivo</button><br>
+
+<div id="divMsg"></div>
+</body>
+<script>
+    function repetir() {
+    let vezesRepetidas = Number(iptNum.value);
+    let frase = iptFrase.value;
+    let vezes = 0;
+    let fraseRepetida = ``;
+
+    while (vezes < vezesRepetidas) {
+        vezes++
+        fraseRepetida += ` ${ frase}`;    
+        divMsg.innerHTML += ` ${vezes} - ${fraseRepetida}<br>`;
+    }
+    }
+</script>
+</html>

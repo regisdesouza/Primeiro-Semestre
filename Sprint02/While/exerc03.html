@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc03</title>
+</head>
+<body>
+    <h1>Frase Numerada</h1>
+
+    <button onclick="dizer()">Diga algo sobre a matéria de Algoritmos</button><br>
+
+    <div id="divMsg"></div>
+
+</body>
+<script>
+    var contador = 0;
+
+    function dizer() {
+        while(contador < 7){
+
+            contador++
+            divMsg.innerHTML += `${contador} - Algoritmos e top<br>`;
+        }
+}
+</script>
+</html>

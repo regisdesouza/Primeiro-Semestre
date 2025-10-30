@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 10</title>
+</head>
+<body>
+
+<h1>Pares no Intervalo </h1>
+
+Insira o inicio do Intervalo: <input id="iptNumUm"><br>
+Insira o final do Intervalo : <input id="iptNumDois"><br>
+
+<button onclick="calcular()">S2 Pares</button><br>
+
+<div id="divMsg"></div>
+
+
+</body>
+<script>
+    var numeroUm = Number(iptNumUm.value);
+    var numeroDois = Number(iptNumDois.value);
+
+    function calcular() {
+    while (numeroUm < numeroDois) {
+        numeroUm++
+        if (numeroUm % 2 == 0) {
+            divMsg.innerHTML += `${numeroUm}<br>`;
+        } else {
+            divMsg.innerHTML += ``;
+        }
+    }        
+    }
+</script>
+</html>
