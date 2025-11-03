@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Creating a half pyramid using * </h1>
+
+  Insert the number here <input type="number" id="xTimes">
+<button onclick="create()">Clicar</button>  <br>
+
+<div id="divMsg"></div>
+</body>
+
+<script>
+  function create() {
+    var rows = Number(xTimes.value);
+    divMsg.innerHTML = '';
+
+    for (let index = 1; index < rows; index++) {
+      for (let i = 1; i <= index; i++) {
+        
+        divMsg.innerHTML += `*`;
+      }
+      divMsg.innerHTML += `<br>`;
+    }
+  }
+</script>
+</html>

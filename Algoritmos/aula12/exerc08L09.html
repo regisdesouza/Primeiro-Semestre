@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Cadastro de Alunos com Exibição Invertida</h1>
+
+  Insira os nomes dos alunos: <input id="iptNomes" type="text">
+  <button onclick="inserir()">Inserir</button>
+
+  <div id="divMsg"></div>
+
+</body>
+
+<script>
+
+var alunos = [];
+
+function inserir() {
+
+var nome = iptNomes.value; 
+  
+alunos.push(nome)
+
+iptNomes.value = "";
+
+divMsg.innerHTML = "";
+
+for (let index = alunos.length - 1; index >= 0 ; index--) {
+  divMsg.innerHTML += alunos[index] + "<br>";
+  console.log(index + alunos)
+}
+
+}
+</script>
+</html>

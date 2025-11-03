@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linhas de Ônibus</title>
+</head>
+<body>
+
+<h1>Registro de Linhas de Ônibus</h1>
+
+Linha de ônibus: <input id="iptLinha" type="text" />
+<button onclick="gravar()">Gravar busão</button>
+<br><br>
+
+Pesquisar linha: <input id="iptPesquisar" type="text" />
+<button onclick="pesquisar()">Pesquisar</button>
+
+<div id="divMsg"></div>
+
+<script>
+var linhas = [];
+
+function gravar() {
+  var nome = iptLinha.value;
+
+  if (nome != "") {
+    linhas.push(nome);
+  }
+
+  iptLinha.value = "";
+
+  var conteudo = `Linhas que você já pegou (mais recentes primeiro):<br><br>`;
+  for (var i = linhas.length - 1; i >= 0; i--) {
+    conteudo += `${linhas[i]}<br>`;
+  }
+
+  divMsg.innerHTML = conteudo;
+
+}
+
+function pesquisar() {
+
+  var linha = iptPesquisar.value;
+
+  var indices = [];
+
+  for (var i = 0; i < linhas.length; i++) {
+    if (linhas[i] === linha) {
+      indices.push(i + 1);
+
+    }
+  }
+
+  var resultado = "";
+
+  if (indices.length === 0) {
+    resultado = `Você nunca pegou essa linha.`;
+  } else {
+    resultado = `Você já pegou essa linha ${indices.length} vezes, nessa ordem: `;
+    for (var i = 0; i < indices.length; i++) {
+      resultado += indices[i];
+      if (i < indices.length - 1) {
+        resultado += ", ";
+      }
+    }
+  }
+
+  var conteudo = `Linhas que você já pegou (mais recentes primeiro):<br><br>`;
+
+  for (var i = linhas.length - 1; i >= 0; i--) {
+    conteudo += `${linhas[i]}<br>`;
+
+  }
+  
+  conteudo += `<br>${resultado}`;
+
+  divMsg.innerHTML = conteudo;
+}
+</script>
+
+</body>
+</html>
